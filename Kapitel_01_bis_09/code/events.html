@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+</head>
+
+<body>
+  <h1 id="mainHeadline">Events testen</h1>
+
+  <script>
+
+    let headline = document.getElementById("mainHeadline");
+    let counter = 1;
+
+    headline.onclick = function () {
+      if (counter % 2 == 1) {
+
+        headline.innerHTML = "Klick mich nie wieder";
+
+      } else {
+
+        headline.innerHTML = "123";
+
+      }
+      counter += 1
+    }
+
+    headline.onmouseover = function () {
+
+      headline.style.color = "green";
+
+    }
+
+    headline.onmouseout = function () {
+
+      headline.style.color = "black";
+
+    }
+
+
+  </script>
+</body>
+
+</html>
